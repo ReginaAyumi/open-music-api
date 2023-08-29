@@ -33,13 +33,13 @@ class SongsHandler {
   }
 
   async getSongsHandler(request, h) {
-    const { title, performer } = request.query;
+    const { title = '', performer = '' } = request.query;
     let songs = await this._service.getSongs(title, performer);
 
     if (title || performer) {
       songs = songs.filter((song) => {
-        const searchTitle = title ? song.title.toLowerCase().includes(title.toLowerCase()) : true;
-        const searchPerformer = performer ? song.performer.toLowerCase().includes(performer.toLowerCase()) : true;
+        const searchTitle = song.title.toLowerCase().includes(title.toLowerCase());
+        const searchPerformer = song.performer.toLowerCase().includes(performer.toLowerCase());
         return searchTitle && searchPerformer;
       });
     }

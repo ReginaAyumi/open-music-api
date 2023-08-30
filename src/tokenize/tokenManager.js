@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 const Jwt = require('@hapi/jwt');
 const InvariantError = require('../exceptions/invariantError');
 

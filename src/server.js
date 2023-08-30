@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 // mengimpor dotenv dan menjalankan konfigurasinya
 require('dotenv').config();
 

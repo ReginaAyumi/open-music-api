@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-underscore-dangle */
 const { Pool } = require('pg');
 const { nanoid } = require('nanoid');
 const bcrypt = require('bcrypt');
@@ -24,7 +22,7 @@ class UsersService {
 
     const result = await this._pool.query(query);
 
-    if (!result.rows.length) {
+    if (!result.rowCount) {
       throw new InvariantError('User gagal ditambahkan');
     }
 

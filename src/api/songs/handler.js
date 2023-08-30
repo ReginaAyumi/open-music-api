@@ -1,6 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-underscore-dangle */
 const autoBind = require('auto-bind');
 
 class SongsHandler {

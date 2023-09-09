@@ -34,7 +34,13 @@ class AlbumsHandler {
     const response = h.response({
       status: 'success',
       data: {
-        album,
+        album: {
+          id: album.id,
+          name: album.name,
+          year: album.year,
+          coverUrl: album.cover_url,
+          songs: songs,
+        }
       },
     });
     return response;

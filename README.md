@@ -37,6 +37,9 @@ Dicoding Submission - Belajar Fundamental Aplikasi Back-End
 - Menerapkan Server-Side Cache
 - Pertahankan Fitur OpenMusic API versi 2 dan 1
 
+### Open Music APi Queue Consumer: 
+https://github.com/ReginaAyumi/open-music-queue-consumer
+
 
 ## Dokumentasi
 ![Screenshot (2026)](https://github.com/ReginaAyumi/belajar-github/assets/90667044/511ce286-859c-4de5-8be5-3f6464ff8772)
